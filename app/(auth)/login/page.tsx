@@ -1,5 +1,10 @@
 import FormLogin from "@/components/auth/form-login";
 import { GithubButton, GoogleButton } from "@/components/auth/social-button";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sign In",
+};
 
 const Login = ({ searchParams }: { searchParams?: { error?: string } }) => {
   const params = searchParams?.error;
